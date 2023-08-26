@@ -7,8 +7,8 @@ import Profil from './routes/profil';
 import Layanan from './routes/layanan';
 import Kontak from './routes/kontak';
 import Blog from './routes/blog';
-import ErrorPage from './ErrorPage';
-import './index.css';
+import ErrorPage from './errorPage';
+import './sassStyles/_global.scss';
 
 const router = createBrowserRouter([
   {

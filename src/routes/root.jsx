@@ -1,30 +1,10 @@
-import { Outlet, NavLink } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import Navigation from '../components/Navigation/Navigation';
 
 export default function Root() {
   return (
     <>
-      <header id="navbar">
-        <h1>LOGO</h1>
-        <nav>
-          <ul>
-            <li>
-              <NavLink to="">Beranda</NavLink>
-            </li>
-            <li>
-              <NavLink to="profil">Profil</NavLink>
-            </li>
-            <li>
-              <NavLink to="layanan">Layanan</NavLink>
-            </li>
-            <li>
-              <NavLink to="kontak">Kontak</NavLink>
-            </li>
-            <li>
-              <NavLink to="blog">Blog</NavLink>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Navigation />
       <main>
         <Outlet />
       </main>
