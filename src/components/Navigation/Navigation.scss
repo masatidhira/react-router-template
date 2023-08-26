@@ -1,21 +1,26 @@
+$headerHeight: 5em;
+
 .header {
     width: 100%;
-    height: 4em;
+    height: $headerHeight;
     position: relative;
 
     .wrapper {
-        background-color: white;
+        background-color: lightblue;
         width: 100%;
         height: inherit;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 4em;
+        padding: 0 15%;
         position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
         z-index: 1000;
         
         .logo {
-
+            text-decoration: underline;
         }
 
         .nav {
@@ -23,7 +28,7 @@
                 display: flex;
 
                 .nav-link {
-                    padding: 0 1em;
+                    padding-left: 2em;
 
                     a {
                       color: black;  
