@@ -1,0 +1,64 @@
+$fontSizeNormal: 0.9rem;
+$fontSizeBig: 1.1rem;
+.footer {
+    background-color: lightblue;
+    width: 100%;
+    padding: 5rem 15% 0;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .box-company {
+            flex-basis: max(50%, 400px);
+
+            .logo {
+                font-weight: 700;
+                text-decoration: underline;
+            }
+
+            .desc {
+                font-size: $fontSizeNormal;
+            }
+        }
+
+        .box-information, .box-contact {
+            flex-basis: 20%;
+            font-size: $fontSizeNormal;
+        }
+
+        .box-information {
+            
+            .active {
+                pointer-events: none;
+                font-weight: 700;
+            }
+        }
+
+        .box-contact {
+            flex-basis: 20%;
+            
+            .contact, .email {
+                margin-bottom: 0.5rem;
+            }
+
+            .social {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .logo, .title {
+            font-size: $fontSizeBig;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .copyright {
+        font-size: $fontSizeNormal;
+        text-align: center;
+        padding: 1rem 0;
+    }
+}
