@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Root from './routes/root';
+import Base from './routes/Base/Base';
 import Beranda from './routes/beranda';
 import Profil from './routes/profil';
 import Layanan from './routes/layanan';
@@ -13,7 +13,7 @@ import './sassStyles/_global.scss';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Root />,
+    element: <Base />,
     errorElement: <ErrorPage />,
     children: [
       {

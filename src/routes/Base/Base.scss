@@ -1,0 +1,12 @@
+#root {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        flex: 1;
+        width: 100%;
+        padding: 1rem 10%;
+
+    }
+}
