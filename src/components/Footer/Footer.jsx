@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import { NavLink } from 'react-router-dom';
+import { BiLogoFacebookSquare, BiLogoInstagram, BiLogoYoutube } from 'react-icons/bi';
 import './Footer.scss';
 
 export default function Footer() {
@@ -42,11 +44,17 @@ export default function Footer() {
             <p>info@companymail2.com</p>
           </div>
 
-          <div className="social">
-            <div className="social-icon">FB</div>
-            <div className="social-icon">IG</div>
-            <div className="social-icon">YT</div>
-          </div>
+          <ul className="social">
+            <li className="social-icon">
+              <a href="/" target="_blank"><BiLogoFacebookSquare /></a>
+            </li>
+            <li className="social-icon">
+              <a href="/" target="_blank"><BiLogoInstagram /></a>
+            </li>
+            <li className="social-icon">
+              <a href="/" target="_blank"><BiLogoYoutube /></a>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="copyright">Copyright &copy; Company All Right Reserved</div>

@@ -45,8 +45,14 @@ $fontSizeBig: 1.1rem;
             }
 
             .social {
+                width: 70%;
                 display: flex;
                 justify-content: space-between;
+
+                .social-icon svg {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
             }
         }
 
