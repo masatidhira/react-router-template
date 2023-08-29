@@ -1,4 +1,7 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable react/button-has-type */
 import { NavLink } from 'react-router-dom';
+import { HiMenu } from 'react-icons/hi';
 import './Navigation.scss';
 
 export default function Navigation() {
@@ -24,6 +27,7 @@ export default function Navigation() {
               <NavLink to="blog">Blog</NavLink>
             </li>
           </ul>
+          <button className="nav-button"><HiMenu /></button>
         </nav>
       </div>
     </header>

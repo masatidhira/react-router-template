@@ -1,3 +1,5 @@
+@import '../../sassStyles/mixins';
+
 $headerHeight: 5em;
 
 .header {
@@ -24,8 +26,15 @@ $headerHeight: 5em;
         }
 
         .nav {
+            display: flex;
+
             .nav-links {
-                display: flex;
+                display: none;
+
+                @include mdMinBreakPoint() {
+                    display: flex;
+                }
+                
 
                 .nav-link {
                     padding-left: 2em;
@@ -41,6 +50,21 @@ $headerHeight: 5em;
                 }
             }
             
+            .nav-button {
+                width: 1.7rem;
+                height: 1.7rem;
+
+                svg {
+                    width: inherit;
+                    height: inherit;
+                }
+
+                @include mdMinBreakPoint() {
+                    display: none;
+                }
+
+            }
+
         }
     }
 }
