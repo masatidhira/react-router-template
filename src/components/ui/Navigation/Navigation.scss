@@ -1,0 +1,25 @@
+@import "../../../sassStyles/mixins";
+
+.navigation {
+    display: none;
+    @include lgMinBreakPoint() {
+        display: block;
+    }
+
+    &>ul {
+        display: flex;
+
+         &>li {
+            padding-left: 2em;
+
+            a {
+                color: black;  
+            }
+
+            .active {
+                font-weight: 700;
+                pointer-events: none;
+            }
+        }
+    }
+}

@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import { NavLink } from 'react-router-dom';
 import { BiLogoFacebookSquare, BiLogoInstagram, BiLogoYoutube } from 'react-icons/bi';
-import './Footer.scss';
+import './RootFooter.scss';
 
-export default function Footer() {
+export default function RootFooter() {
   return (
-    <footer className="footer">
+    <footer className="root-footer">
       <div className="content">
         <div className="box-company">
           <div className="logo">LOGO</div>
